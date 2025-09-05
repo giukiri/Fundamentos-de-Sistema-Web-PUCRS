@@ -1,0 +1,406 @@
+
+
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 3px 12px rgba(0, 0, 102, 0.1);
+    border: 2px solid #0d6efd;
+}
+
+form label {
+    font-weight: bold;
+    color: #003366;
+    margin-top: 10px;
+    display: block;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #99c2ff;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+form input:focus, form select:focus {
+    border-color: #0d6efd;
+    outline: none;
+    box-shadow: 0 0 5px rgba(13, 110, 253, 0.5);
+}
+
+button[type="submit"], .btn {
+    background-color: #0d6efd;
+    color: white;
+    font-weight: bold;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover, .btn:hover {
+    background-color: #004bb5;
+}
+
+/* Mensagem de erro/sucesso */
+#mensagem {
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Botão Voltar ao Topo */
+#btnTopo {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  font-size: 18px;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0px 3px 6px rgba(0,0,0,0.2);
+}
+
+#btnTopo:hover {
+  background-color: #004494;
+}
+
+
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* branco gelo */
+    margin: 0;
+    padding: 0;
+    color: #003366; /* azul escuro */
+}
+
+/* Cabeçalho */
+header {
+    background-color: #0d6efd; /* azul bootstrap */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header nav a {
+    color: rgb(24, 24, 24);
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: none;
+}
+
+/* Conteúdo principal */
+main {
+    padding: 20px;
+}
+
+/* Produtos e serviços */
+.produto, .servico {
+    border: 1px solid #cce0ff;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 12px;
+    background: white;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.produto:hover, .servico:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 12px rgba(0,0,102,0.2);
+}
+
+.produto img, .servico img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 2px solid #0d6efd;
+}
+
+/* Grid de produtos responsivo */
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center; 
+    margin-top: 15px;
+}
+
+/* Formulário */
+form {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 3px 10px rgba(0,0,102,0.1);
+}
+
+form label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+    color: #003366;
+}
+
+form input, form select {
+    width: 100%;
+    margin-bottom: 15px;
+    border: 1px solid #99c2ff;
+    border-radius: 6px;
+    padding: 8px;
+}
+
+/* Botão */
+button, .btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #0d6efd;
+    color: white;
+    font-weight: bold;
+}
+
+button:hover, .btn:hover {
+    background: #004bb5;
+}
+
+/* Rodapé */
+footer {
+    background: #003366;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+footer a {
+    color: #66b3ff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: none;
+}
+
+
+header nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center; 
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+
+header nav a i {
+    margin-right: 6px;
+    font-size: 1.1rem;
+}
+
+
+header nav a:hover {
+    color: #cce0ff;
+    transform: scale(1.1);
+}
+
+
+.carrossel {
+  position: relative;
+  max-width: 700px;
+  margin: 20px auto;
+  overflow: hidden;
+  border: 2px solid #0056b3;
+  border-radius: 12px;
+  background-color: #ffffff;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.slides img {
+  display: none;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.slides img.ativo {
+  display: block;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #0056b3;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 18px;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.prev:hover, .next:hover {
+  background-color: #004494;
+}
+
+
+.radio-group {
+    display: flex;
+    gap: 15px; 
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 5px; 
+}
+
+
+.cart {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: #0d6efd;
+    padding: 8px 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+
+.categoria {
+    margin: 30px 0;
+}
+
+
+.produtos {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+
+.card {
+    background: white;
+    border: 2px solid #0d6efd;
+    border-radius: 12px;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0px 3px 10px rgba(0,0,102,0.1);
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+
+.card button {
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+    background-color: #004bb5;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table th, table td {
+    border: 1px solid #0d6efd;
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background-color: #0d6efd;
+    color: white;
+}
+
+
+.cart a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.cart a:hover {
+    color: #ffdd00; 
+}
+
+button {
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #004bb5;
+}
+
+.alert {
+    background-color: #d1e7dd;
+    color: #0f5132;
+    border: 1px solid #badbcc;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+}
